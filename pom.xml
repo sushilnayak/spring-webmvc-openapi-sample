@@ -155,30 +155,6 @@
                 </executions>
             </plugin>
 
-            <!-- Swagger Maven Plugin -->
-            <plugin>
-                <groupId>io.swagger.core.v3</groupId>
-                <artifactId>swagger-maven-plugin</artifactId>
-                <version>${swagger.version}</version>
-                <configuration>
-                    <outputFileName>openapi</outputFileName>
-                    <outputPath>${project.build.directory}</outputPath>
-                    <outputFormat>YAML</outputFormat>
-                    <resourcePackages>
-                        <package>com.nayak.openapi.controller</package>
-                    </resourcePackages>
-                    <prettyPrint>true</prettyPrint>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>compile</phase>
-                        <goals>
-                            <goal>resolve</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
             <!-- Contract Testing Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
